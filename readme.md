@@ -25,3 +25,6 @@ EMAIL_DESTINO="soporte@tudominio.com"
 chmod +x simulate_aws_alert.sh
 
 ./simulate_aws_alert.sh
+
+
+aws sns delete-topic --topic-arn arn:aws:sns:us-east-1:<TU_ACCOUNT_ID>:alertas-seguridad-aws
